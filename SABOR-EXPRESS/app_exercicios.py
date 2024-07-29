@@ -56,4 +56,56 @@ elif x < 0 and y < 0:
 elif x > 0 and y < 0:
     print("O ponto está no quarto quadrante.")
 else:
-    print("O ponto está sobre um eixo ou na origem.")                
+    print("O ponto está sobre um eixo ou na origem.")
+
+
+#Trabalhando com Listas
+
+lista_de_numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+lista_de_nomes = ['André', 'Luana', 'Henry', 'Victória']
+lista_de_anos = [1987, 2024]
+
+def lista_numeros():
+    for numero in lista_de_numeros:
+        print(numero)
+
+soma_impares = 0
+for i in range(1, 11, 2):
+    soma_impares += 1
+print(soma_impares)     
+
+for i in range(10, 0, -1):
+    print(i)
+
+numero_tabuada = int(input("Digite um número para a tabuada: "))
+for i in range(1, 11):
+    resultado = numero_tabuada * i
+    print(f"{numero_tabuada} x {i} = {resultado}")
+
+lista_numeros = [10, 5, 8, 3, 7]
+soma = 0
+
+try:
+    for numero in lista_numeros:
+        soma += numero
+    print(f"Soma dos elementos: {soma}")
+except Exception as e:
+    print(f"Ocorreu um erro: {e}")
+
+lista_valores = [15, 20, 25, 30]
+soma_valores = 0
+
+try:
+    for valor in lista_valores:
+        soma_valores += valor
+    media = soma_valores / len(lista_valores)
+    print(f"Média dos valores: {media}")
+except ZeroDivisionError:
+    print("A lista está vazia, não é possível calcular a média.")
+except Exception as e:
+    print(f"Ocorreu um erro: {e}")
+
+
+
+
+
