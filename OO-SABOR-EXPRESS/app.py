@@ -14,4 +14,4 @@ def main():
     restaurante_praca.exibir_cardapio
 
 if __name__ == '__main__':
-    main() 
+    main()
